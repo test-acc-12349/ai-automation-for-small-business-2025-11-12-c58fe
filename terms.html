@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Automatisez votre entreprise avec l'IA. Solutions d'automatisation intelligentes pour les petites entreprises à Paris.">
+    <meta name="keywords" content="automatisation, IA, petite entreprise, workflows intelligents, réduction des coûts">
+    <meta name="author" content="AI Automation">
+    <title>Conditions d'Utilisation | AutomationIA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        :root {
+            --primary: #5B4BFF;
+            --secondary: #EEF0FF;
+            --accent: #00E5A8;
+        }
+        
+        body {
+            background-color: #FFFFFF;
+            color: #1F2937;
+        }
+        
+        .primary-gradient {
+            background: linear-gradient(135deg, #5B4BFF 0%, #7C6EFF 100%);
+        }
+        
+        .secondary-bg {
+            background-color: #EEF0FF;
+        }
+        
+        .accent-text {
+            color: #00E5A8;
+        }
+        
+        .primary-text {
+            color: #5B4BFF;
+        }
+        
+        .btn-primary {
+            background-color: #5B4BFF;
+            color: white;
+            border-radius: 9999px;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            transition: all 0.3s ease-out;
+            display: inline-block;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn-primary:hover {
+            background-color: #4A3ACC;
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(91, 75, 255, 0.3);
+        }
+        
+        .btn-secondary {
+            background-color: white;
+            color: #5B4BFF;
+            border: 2px solid #5B4BFF;
+            border-radius: 9999px;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            transition: all 0.3s ease-out;
+            display: inline-block;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        .btn-secondary:hover {
+            background-color: #EEF0FF;
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(91, 75, 255, 0.2);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease-out;
+            border-radius: 1rem;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(91, 75, 255, 0.15);
+        }
+        
+        .feature-card {
+            background-color: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease-out;
+        }
+        
+        .feature-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 20px 40px rgba(91, 75, 255, 0.15);
+        }
+        
+        .faq-item {
+            background-color: white;
+            border-radius: 1rem;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease-out;
+        }
+        
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 600;
+            color: #1F2937;
+            transition: all 0.3s ease-out;
+        }
+        
+        .faq-question:hover {
+            color: #5B4BFF;
+        }
+        
+        .faq-icon {
+            transition: transform 0.3s ease-out;
+            color: #5B4BFF;
+        }
+        
+        .faq-answer {
+            margin-top: 1rem;
+            color: #6B7280;
+            line-height: 1.6;
+            transition: all 0.3s ease-out;
+        }
+        
+        .testimonial-card {
+            background-color: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease-out;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(91, 75, 255, 0.15);
+        }
+        
+        .star-rating {
+            color: #FCD34D;
+            font-size: 0.875rem;
+        }
+        
+        .section-title {
+            font-size: 2.25rem;
+            font-weight: 700;
+            letter-spacing: -0.025em;
+            color: #1F2937;
+        }
+        
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 1.875rem;
+            }
+        }
+        
+        .section-subtitle {
+            font-size: 1.125rem;
+            color: #6B7280;
+            line-height: 1.75;
+        }
+        
+        .hero-title {
+            font-size: 3.75rem;
+            font-weight: 800;
+            letter-spacing: -0.025em;
+            line-height: 1.1;
+            color: #1F2937;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.25rem;
+            }
+        }
+        
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: #6B7280;
+            line-height: 1.75;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+        }
+        
+        .mobile-menu {
+            transition: all 0.3s ease-out;
+        }
+        
+        .mobile-menu.hidden {
+            display: none;
+        }
+        
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background-color: white;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        
+        .icon-small {
+            width: 1.5rem;
+            height: 1.5rem;
+            stroke-width: 1.5;
+        }
+        
+        .icon-medium {
+            width: 2rem;
+            height: 2rem;
+            stroke-width: 1.5;
+        }
+        
+        .icon-large {
+            width: 3rem;
+            height: 3rem;
+            stroke-width: 1.5;
+        }
+        
+        .policy-content h2 {
+            font-size: 1.875rem;
+            font-weight: 700;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: #1F2937;
+        }
+        
+        .policy-content h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: #374151;
+        }
+        
+        .policy-content p {
+            line-height: 1.75;
+            margin-bottom: 1rem;
+            color: #6B7280;
+        }
+        
+        .policy-content ul {
+            list-style-type: disc;
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+            color: #6B7280;
+        }
+        
+        .policy-content li {
+            margin-bottom: 0.5rem;
+            line-height: 1.75;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <nav class="max-w-7xl mx-auto px-8 md:px-16 py-6 flex justify-between items-center">
+            <div class="flex items-center justify-between w-full">
+                <a href="https://test-acc-12349.github.io/ai-automation-for-small-business-2025-11-12-c58fe" class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-[#5B4BFF] to-[#7C6EFF] rounded-full flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">IA</span>
+                    </div>
+                    <span class="text-xl font-bold text-gray-900 hidden sm:inline">AutomationIA</span>
+                </a>
+                <a href="https://test-acc-12349.github.io/ai-automation-for-small-business-2025-11-12-c58fe" class="text-gray-700 font-medium hover:text-[#5B4BFF] transition-colors duration-300">
+                    ← Back
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Terms of Service Content -->
+    <section class="py-20 md:py-32 bg-white">
+        <div class="max-w-4xl mx-auto px-8 md:px-16">
+            <div class="mb-12">
+                <h1 class="hero-title mb-4">Conditions d'Utilisation</h1>
+                <p class="text-xl text-gray-600">Dernière mise à jour : 12 novembre 2025</p>
+            </div>
+
+            <div class="policy-content">
+                <!-- Introduction Section -->
+                <h2>1. Introduction</h2>
+                <p>
+                    Bienvenue sur AutomationIA (« Nous », « Notre », ou « Plateforme »). Ces Conditions d'Utilisation (« Conditions ») régissent votre accès à et utilisation de notre plateforme d'automatisation IA, incluant tous les services, contenu et fonctionnalités associés (collectivement, le « Service »).
+                </p>
+                <p>
+                    En accédant à ou en utilisant AutomationIA, vous acceptez d'être lié par ces Conditions. Si vous n'acceptez pas ces Conditions, veuillez ne pas utiliser notre Service. Nous nous réservons le droit de modifier ces Conditions à tout moment. Les modifications prendront effet immédiatement après la publication. Votre utilisation continue du Service après les modifications constitue votre acceptation des Conditions modifiées.
+                </p>
+
+                <!-- User Agreements Section -->
+                <h2>2. Accords Utilisateur</h2>
+                
+                <h3>2.1 Création de Compte</h3>
+                <p>
+                    Pour utiliser certaines fonctionnalités du Service, vous devez créer un compte utilisateur. Vous acceptez de fournir des informations exactes, complètes et à jour lors de la création de votre compte. Vous êtes responsable de maintenir la confidentialité de vos identifiants de connexion et du mot de passe, et vous acceptez de prendre toutes les mesures raisonnables pour les protéger.
+                </p>
+                <p>
+                    Vous êtes entièrement responsable de toutes les activités qui se produisent sous votre compte. Vous acceptez de notifier immédiatement AutomationIA de tout accès non autorisé à votre compte ou de toute autre violation de sécurité.
+                </p>
+
+                <h3>2.2 Droits de Licence</h3>
+                <p>
+                    Sous réserve de votre respect de ces Conditions, AutomationIA vous accorde une licence limitée, non exclusive, non transférable et révocable pour accéder à et utiliser le Service à titre personnel ou professionnel. Cette licence ne vous donne pas le droit de :
+                </p>
+                <ul>
+                    <li>Modifier, adapter ou traduire le Service</li>
+                    <li>Reproduire, distribuer, vendre ou revendre le Service</li>
+                    <li>Utiliser le Service pour créer des services concurrents</li>
+                    <li>Accéder au Service à des fins de rétro-ingénierie ou de développement de produits concurrents</li>
+                    <li>Utiliser le Service de manière automatisée sans autorisation préalable écrite</li>
+                </ul>
+
+                <h3>2.3 Responsabilités de l'Utilisateur</h3>
+                <p>
+                    En utilisant AutomationIA, vous acceptez de :
+                </p>
+                <ul>
+                    <li>Utiliser le Service conformément à toutes les lois et réglementations applicables</li>
+                    <li>Ne pas utiliser le Service de manière qui pourrait endommager, désactiver ou surcharger le Service</li>
+                    <li>Ne pas tenter d'accéder à des parties non autorisées du Service</li>
+                    <li>Ne pas transmettre de virus, logiciels malveillants ou tout code malveillant</li>
+                    <li>Respecter les droits de propriété intellectuelle de tiers</li>
+                    <li>Ne pas utiliser le Service pour du harcèlement, de l'intimidation ou d'autres comportements abusifs</li>
+                </ul>
+
+                <!-- Acceptable Use Section -->
+                <h2>3. Utilisation Acceptable</h2>
+                
+                <h3>3.1 Contenu Interdit</h3>
+                <p>
+                    Vous acceptez de ne pas utiliser le Service pour :
+                </p>
+                <ul>
+                    <li>Créer, télécharger ou distribuer du contenu illégal ou contraire à l'éthique</li>
+                    <li>Violer les droits de propriété intellectuelle, les droits à la vie privée ou les droits personnels d'autrui</li>
+                    <li>Transmettre du contenu offensant, diffamatoire, menaçant ou abusif</li>
+                    <li>Usurper l'identité d'une autre personne ou entité</li>
+                    <li>Mener des activités frauduleuses ou trompeuses</li>
+                    <li>Accéder ou tenter d'accéder à des données d'autres utilisateurs sans autorisation</li>
+                    <li>Participer à du harcèlement sexuel ou à la discrimination</li>
+                </ul>
+
+                <h3>3.2 Respect des Lois</h3>
+                <p>
+                    Vous acceptez d'utiliser le Service uniquement à des fins légales et conformément à toutes les lois, règles, réglementations et ordonnances applicables, y compris mais sans s'y limiter le Règlement Général sur la Protection des Données (RGPD), les lois sur la protection des données et les lois sur le commerce électronique.
+                </p>
+
+                <h3>3.3 Surveillance et Application</h3>
+                <p>
+                    AutomationIA se réserve le droit, mais n'a pas l'obligation, de surveiller l'utilisation du Service par les utilisateurs. Nous pouvons prendre toutes les mesures que nous jugeons nécessaires pour maintenir le Service et faire respecter ces Conditions, notamment la suppression de contenu, la suspension de comptes ou l'engagement de poursuites judiciaires.
+                </p>
+
+                <!-- Limitation of Liability Section -->
+                <h2>4. Limitation de Responsabilité</h2>
+                
+                <h3>4.1 Clause de Non-Responsabilité</h3>
+                <p>
+                    LE SERVICE EST FOURNI « TEL QUEL » ET « TEL QUE DISPONIBLE » SANS GARANTIE D'AUCUNE SORTE, EXPRESSE OU IMPLICITE. AUTOMATIONÍA DÉCLINE EXPRESSÉMENT TOUTES LES GARANTIES, Y COMPRIS MAIS SANS S'Y LIMITER LES GARANTIES IMPLICITES DE QUALITÉ MARCHANDE, D'ADÉQUATION À UN USAGE PARTICULIER ET D'NON-CONTREFAÇON.
+                </p>
+
+                <h3>4.2 Limitation de Dommages</h3>
+                <p>
+                    DANS TOUTE LA MESURE PERMISE PAR LA LOI APPLICABLE, AUTOMATIONÍA NE SERA PAS RESPONSABLE DES DOMMAGES INDIRECTS, ACCESSOIRES, SPÉCIAUX, CONSÉCUTIFS OU PUNITIFS, Y COMPRIS LA PERTE DE PROFITS, LES DONNÉES OU L'UTILISATION, MÊME SI AUTOMATIONÍA A ÉTÉ AVISÉE DE LA POSSIBILITÉ DE TELS DOMMAGES.
+                </p>
+                <p>
+                    La responsabilité totale d'AutomationIA envers vous pour tous les sinistres découlant de ou liés à ces Conditions ou au Service ne dépassera pas le montant que vous avez payé à AutomationIA au cours des douze (12) mois précédents, ou cent euros (100 €), selon le montant le plus élevé.
+                </p>
+
+                <h3>4.3 Exclusions</h3>
+                <p>
+                    Certaines juridictions ne permettent pas l'exclusion de certaines garanties ou la limitation de certains dommages. Dans la mesure où ces exclusions ou limitations ne sont pas autorisées dans votre juridiction, elles ne s'appliqueront pas à vous, mais s'appliqueront dans la mesure maximale autorisée par la loi.
+                </p>
+
+                <!-- Service Availability Section -->
+                <h2>5. Disponibilité du Service</h2>
+                
+                <h3>5.1 Disponibilité</h3>
+                <p>
+                    AutomationIA s'efforce de maintenir le Service disponible 24 heures sur 24, 7 jours sur 7. Cependant, le Service peut être indisponible pour diverses raisons, notamment la maintenance, les mises à jour, les pannes techniques ou les circonstances indépendantes de notre volonté. Nous ne serons pas responsables des interruptions du Service ou de l'indisponibilité du Service.
+                </p>
+
+                <h3>5.2 Maintenance</h3>
+                <p>
+                    AutomationIA peut effectuer une maintenance programmée ou non programmée sur le Service à tout moment. Nous nous efforcerons de vous notifier à l'avance de toute maintenance programmée, mais nous ne sommes pas tenus de le faire. Vous acceptez que le Service puisse être indisponible pendant la maintenance.
+                </p>
+
+                <!-- Data and Privacy Section -->
+                <h2>6. Données et Confidentialité</h2>
+                
+                <h3>6.1 Données Utilisateur</h3>
+                <p>
+                    Vous conservez la propriété de toutes les données que vous fournissez à AutomationIA (« Données Utilisateur »). En fournissant des Données Utilisateur à AutomationIA, vous nous accordez une licence pour utiliser, traiter et stocker ces données afin de fournir le Service.
+                </p>
+
+                <h3>6.2 Confidentialité des Données</h3>
+                <p>
+                    AutomationIA traite les Données Utilisateur conformément à notre Politique de Confidentialité. Veuillez consulter notre Politique de Confidentialité pour plus d'informations sur la façon dont nous collectons, utilisons et protégeons vos données personnelles.
+                </p>
+
+                <h3>6.3 Sécurité des Données</h3>
+                <p>
+                    AutomationIA met en œuvre des mesures de sécurité appropriées pour protéger les Données Utilisateur contre l'accès, la modification ou la destruction non autorisés. Cependant, aucune méthode de transmission sur Internet n'est 100% sécurisée. AutomationIA ne peut pas garantir la sécurité absolue des Données Utilisateur.
+                </p>
+
+                <!-- Intellectual Property Section -->
+                <h2>7. Propriété Intellectuelle</h2>
+                
+                <h3>7.1 Propriété d'AutomationIA</h3>
+                <p>
+                    Le Service, y compris tous les contenus, fonctionnalités, logiciels, texte, graphiques, images, vidéos et tout autre matériel (collectivement, le « Contenu d'AutomationIA »), est la propriété exclusive d'AutomationIA ou de ses fournisseurs de contenu et est protégé par les lois sur le droit d'auteur, les marques déposées et autres lois sur la propriété intellectuelle.
+                </p>
+
+                <h3>7.2 Utilisation du Contenu</h3>
+                <p>
+                    Vous ne pouvez pas reproduire, distribuer, transmettre, afficher, exécuter, publier, concéder sous licence, modifier, créer des œuvres dérivées ou vendre le Contenu d'AutomationIA sans l'autorisation écrite préalable d'AutomationIA, sauf dans la mesure expressément autorisée par ces Conditions ou par la loi applicable.
+                </p>
+
+                <!-- Termination Section -->
+                <h2>8. Résiliation</h2>
+                
+                <h3>8.1 Résiliation par l'Utilisateur</h3>
+                <p>
+                    Vous pouvez résilier votre compte à tout moment en nous contactant à l'adresse indiquée dans la section Contact ci-dessous. Après la résiliation, vous n'aurez plus accès au Service.
+                </p>
+
+                <h3>8.2 Résiliation par AutomationIA</h3>
+                <p>
+                    AutomationIA peut résilier ou suspendre votre compte et votre accès au Service à tout moment, pour quelque raison que ce soit, avec ou sans préavis, y compris si vous violez ces Conditions. En cas de résiliation, vous restez responsable de tous les frais et obligations encourus avant la résiliation.
+                </p>
+
+                <!-- Indemnification Section -->
+                <h2>9. Indemnisation</h2>
+                <p>
+                    Vous acceptez d'indemniser, de défendre et de dégager de toute responsabilité AutomationIA et ses dirigeants, administrateurs, employés, agents et successeurs contre toute réclamation, action, dommage, responsabilité ou dépense (y compris les frais juridiques) découlant de ou liée à votre utilisation du Service ou à votre violation de ces Conditions.
+                </p>
+
+                <!-- Governing Law Section -->
+                <h2>10. Droit Applicable et Juridiction</h2>
+                <p>
+                    Ces Conditions sont régies par et construites conformément aux lois de la France, sans égard à ses conflits de dispositions légales. Vous acceptez que tout litige découlant de ou lié à ces Conditions soit soumis à la juridiction exclusive des tribunaux situés en France.
+                </p>
+
+                <!-- Severability Section -->
+                <h2>11. Divisibilité</h2>
+                <p>
+                    Si une disposition de ces Conditions est jugée invalide ou inapplicable par un tribunal compétent, cette disposition sera modifiée au minimum nécessaire pour la rendre valide et applicable, ou, si cela n'est pas possible, sera supprimée. Le reste de ces Conditions restera en vigueur et sera applicable.
+                </p>
+
+                <!-- Entire Agreement Section -->
+                <h2>12. Accord Complet</h2>
+                <p>
+                    Ces Conditions, ainsi que notre Politique de Confidentialité, constituent l'accord complet entre vous et AutomationIA concernant le Service et annulent tous les accords, ententes et déclarations antérieurs ou contemporains, qu'ils soient écrits ou verbaux. Aucun autre accord, représentation ou garantie n'a été fait ou accepté par l'une ou l'autre partie concernant le sujet de ces Conditions.
+                </p>
+
+                <!-- Contact Section -->
+                <h2>13. Nous Contacter</h2>
+                <p>
+                    Si vous avez des questions, des préoccupations ou des plaintes concernant ces Conditions d'Utilisation, veuillez nous contacter à :
+                </p>
+                <p>
+                    <strong>AutomationIA</strong><br>
+                    Email : <a href="mailto:admin@test.com" class="text-[#5B4BFF] hover:text-[#4A3ACC] transition-colors">admin@test.com</a><br>
+                    Adresse : Paris, France
+                </p>
+                <p>
+                    Nous nous efforcerons de répondre à votre demande dans les 30 jours ouvrables.
+                </p>
+
+                <!-- Last Updated -->
+                <div class="mt-12 pt-8 border-t border-gray-200">
+                    <p class="text-sm text-gray-500">
+                        Ces Conditions d'Utilisation ont été mises à jour pour la dernière fois le 12 novembre 2025. AutomationIA se réserve le droit de mettre à jour ces Conditions à tout moment. Veuillez consulter cette page régulièrement pour les mises à jour.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-16 md:py-20">
+        <div class="max-w-7xl mx-auto px-8 md:px-16">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mb-12">
+                <!-- Brand Column -->
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-[#5B4BFF] to-[#7C6EFF] rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">IA</span>
+                        </div>
+                        <span class="text-xl font-bold text-white">AutomationIA</span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Transformez votre entreprise avec l'automatisation IA de nouvelle génération.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#5B4BFF] transition-colors duration-300">
+                            <i class="fab fa-facebook-f text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#5B4BFF] transition-colors duration-300">
+                            <i class="fab fa-twitter text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#5B4BFF] transition-colors duration-300">
+                            <i class="fab fa-linkedin-in text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#5B4BFF] transition-colors duration-300">
+                            <i class="fab fa-instagram text-white"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Product Column -->
+                <div>
+                    <h4 class="text-white font-bold mb-6">Produit</h4>
+                    <ul class="space-y-3">
+                        <li><a href="https://test-acc-12349.github.io/ai-automation-for-small-business-2025-11-12-c58fe#features" class="text-gray-400 hover:text-[#5B4BFF] transition-colors duration-300">Fonctionnalités</a></li>
+                        <li><a href="https://test-acc-12349.github.io/ai-automation-for-small-business-2025-11-12-c58fe#benefits" class="text-gray-400 hover:text-[#5B4BFF] transition-colors duration-300">Avantages</a></li>
+                        <li><a href="https://test-acc-12349.github.io/ai-automation-for-small-business-2025-11-12-c58fe#testimonials" class="text-gray-400 hover:text-[#5B4BFF] transition-colors duration-300">Témoignages</a></li>
+                        <li><a href="https://test-acc-12349.github.io/ai-automation-for-small-business-2025-11-12-c58fe#faq" class="text-gray-400 hover:text-[#5B4BFF] transition-colors duration-300">FAQ</a></li>
+                        <li><a href="https://test.com" class="text-gray-400 hover:text-[#5B4BFF] transition-colors duration-300">Tarification</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Company Column -->
+                <div>
+                    <h4 class="text-white font-bold mb-6">Entreprise</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-[#5B4BFF] transition-colors duration-300">À Propos</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-[#5B4BFF] transition-colors duration-300">Carrières</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-[#5B4BFF] transition-colors duration-300">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-[#5B4BFF] transition-colors duration-300">Ressources</a></li>
+                        <li><a href="https://test-acc-12349.github.io/ai-automation-for-small-business-2025-11-12-c58fe#contact" class="text-gray-400 hover:text-[#5B4BFF] transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Legal Column -->
+                <div>
+                    <h4 class="text-white font-bold mb-6">Légal</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-[#5B4BFF] transition-colors duration-300">Politique de Confidentialité</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-[#5B4BFF] transition-colors duration-300">Conditions d'Utilisation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-[#5B4BFF] transition-colors duration-300">Politique de Cookies</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-[#5B4BFF] transition-colors duration-300">Mentions Légales</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Bottom Footer -->
+            <div class="border-t border-gray-800 pt-8 mt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm">
+                        &copy; 2025 AutomationIA. Tous les droits réservés.
+                    </p>
+                    <p class="text-gray-400 text-sm mt-4 md:mt-0">
+                        Conçu et développé avec <span class="text-[#00E5A8]">❤</span> à Paris
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
