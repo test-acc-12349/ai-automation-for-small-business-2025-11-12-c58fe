@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Automatisez votre entreprise avec l'IA. Solutions d'automatisation intelligentes pour les petites entreprises à Paris.">
+    <meta name="keywords" content="automatisation, IA, petite entreprise, workflows intelligents, réduction des coûts">
+    <meta name="author" content="AI Automation">
+    <title>Automatisation IA pour les Petites Entreprises | Solutions Intelligentes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        :root {
+            --primary: #5B4BFF;
+            --secondary: #EEF0FF;
+            --accent: #00E5A8;
+        }
+        
+        body {
+            background-color: #FFFFFF;
+            color: #1F2937;
+        }
+        
+        .primary-gradient {
+            background: linear-gradient(135deg, #5B4BFF 0%, #7C6EFF 100%);
+        }
+        
+        .secondary-bg {
+            background-color: #EEF0FF;
+        }
+        
+        .accent-text {
+            color: #00E5A8;
+        }
+        
+        .primary-text {
+            color: #5B4BFF;
+        }
+        
+        .btn-primary {
+            background-color: #5B4BFF;
+            color: white;
+            border-radius: 9999px;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            transition: all 0.3s ease-out;
+            display: inline-block;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn-primary:hover {
+            background-color: #4A3ACC;
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(91, 75, 255, 0.3);
+        }
+        
+        .btn-secondary {
+            background-color: white;
+            color: #5B4BFF;
+            border: 2px solid #5B4BFF;
+            border-radius: 9999px;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            transition: all 0.3s ease-out;
+            display: inline-block;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        .btn-secondary:hover {
+            background-color: #EEF0FF;
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(91, 75, 255, 0.2);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease-out;
+            border-radius: 1rem;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(91, 75, 255, 0.15);
+        }
+        
+        .feature-card {
+            background-color: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease-out;
+        }
+        
+        .feature-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 20px 40px rgba(91, 75, 255, 0.15);
+        }
+        
+        .faq-item {
+            background-color: white;
+            border-radius: 1rem;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease-out;
+        }
+        
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 600;
+            color: #1F2937;
+            transition: all 0.3s ease-out;
+        }
+        
+        .faq-question:hover {
+            color: #5B4BFF;
+        }
+        
+        .faq-icon {
+            transition: transform 0.3s ease-out;
+            color: #5B4BFF;
+        }
+        
+        .faq-answer {
+            margin-top: 1rem;
+            color: #6B7280;
+            line-height: 1.6;
+            transition: all 0.3s ease-out;
+        }
+        
+        .testimonial-card {
+            background-color: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease-out;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(91, 75, 255, 0.15);
+        }
+        
+        .star-rating {
+            color: #FCD34D;
+            font-size: 0.875rem;
+        }
+        
+        .section-title {
+            font-size: 2.25rem;
+            font-weight: 700;
+            letter-spacing: -0.025em;
+            color: #1F2937;
+        }
+        
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 1.875rem;
+            }
+        }
+        
+        .section-subtitle {
+            font-size: 1.125rem;
+            color: #6B7280;
+            line-height: 1.75;
+        }
+        
+        .hero-title {
+            font-size: 3.75rem;
+            font-weight: 800;
+            letter-spacing: -0.025em;
+            line-height: 1.1;
+            color: #1F2937;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.25rem;
+            }
+        }
+        
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: #6B7280;
+            line-height: 1.75;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+        }
+        
+        .mobile-menu {
+            transition: all 0.3s ease-out;
+        }
+        
+        .mobile-menu.hidden {
+            display: none;
+        }
+        
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background-color: white;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        
+        .icon-small {
+            width: 1.5rem;
+            height: 1.5rem;
+            stroke-width: 1.5;
+        }
+        
+        .icon-medium {
+            width: 2rem;
+            height: 2rem;
+            stroke-width: 1.5;
+        }
+        
+        .icon-large {
+            width: 3rem;
+            height: 3rem;
+            stroke-width: 1.5;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <nav class="max-w-7xl mx-auto px-8 md:px-16 py-6 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-gradient-to-br from-[#5B4BFF] to-[#7C6EFF] rounded-full flex items-center justify-center">
+                    <span class="text-white font-bold text-lg">IA</span>
+                </div>
+                <span class="text-xl font-bold text-gray-900 hidden sm:inline">AutomationIA</span>
+            </div>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#features" class="text-gray-700 font-medium hover:text-[#5B4BFF] transition-colors duration-300">Fonctionnalités</a>
+                <a href="#benefits" class="text-gray-700 font-medium hover:text-[#5B4BFF] transition-colors duration-300">Avantages</a>
+                <a href="#faq" class="text-gray-700 font-medium hover:text-[#5B4BFF] transition-colors duration-300">FAQ</a>
+                <a href="#testimonials" class="text-gray-700 font-medium hover:text-[#5B4BFF] transition-colors duration-300">Témoignages</a>
+                <a href="#contact" class="btn-primary">Démarrer</a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button class="mobile-menu-button bg-gray-100 hover:bg-gray-200 p-2 rounded-lg transition-colors duration-300">
+                    <i class="fas fa-bars text-gray-900 text-xl"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="mobile-menu hidden absolute top-full left-0 right-0 bg-white shadow-lg md:hidden">
+                <div class="max-w-7xl mx-auto px-8 py-6 flex flex-col gap-4">
+                    <a href="#features" class="text-gray-700 font-medium hover:text-[#5B4BFF] transition-colors duration-300 py-2">Fonctionnalités</a>
+                    <a href="#benefits" class="text-gray-700 font-medium hover:text-[#5B4BFF] transition-colors duration-300 py-2">Avantages</a>
+                    <a href="#faq" class="text-gray-700 font-medium hover:text-[#5B4BFF] transition-colors duration-300 py-2">FAQ</a>
+                    <a href="#testimonials" class="text-gray-700 font-medium hover:text-[#5B4BFF] transition-colors duration-300 py-2">Témoignages</a>
+                    <a href="#contact" class="btn-primary text-center">Démarrer</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-32 md:py-40 bg-gradient-to-br from-white via-[#EEF0FF] to-white">
+        <div class="max-w-7xl mx-auto px-8 md:px-16">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 items-center">
+                <div class="space-y-8">
+                    <div class="space-y-4">
+                        <h1 class="hero-title">
+                            Automatisation <span class="primary-text">IA</span> pour les Petites Entreprises
+                        </h1>
+                        <p class="hero-subtitle">
+                            Transformez votre entreprise avec des workflows intelligents et automatisés. Réduisez vos coûts, gagnez du temps et concentrez-vous sur la croissance.
+                        </p>
+                    </div>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                        <a href="https://test.com" class="btn-primary text-center">Commencer Gratuitement</a>
+                        <button class="btn-secondary text-center">Voir une Démo</button>
+                    </div>
+                    
+                    <div class="flex items-center gap-8 pt-8 border-t border-gray-200">
+                        <div>
+                            <p class="text-2xl font-bold text-[#5B4BFF]">500+</p>
+                            <p class="text-sm text-gray-600">Entreprises automatisées</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-bold text-[#5B4BFF]">10,000+</p>
+                            <p class="text-sm text-gray-600">Heures économisées</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-bold text-[#5B4BFF]">4.9/5</p>
+                            <p class="text-sm text-gray-600">Note moyenne</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hidden lg:block">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-gradient-to-r from-[#5B4BFF] to-[#00E5A8] rounded-2xl opacity-20 blur-3xl"></div>
+                        <div class="relative bg-white rounded-2xl p-8 shadow-2xl">
+                            <div class="space-y-4">
+                                <div class="flex items-center gap-3 p-4 bg-[#EEF0FF] rounded-lg">
+                                    <svg class="icon-small text-[#5B4BFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    <span class="font-medium text-gray-900">Workflows Intelligents</span>
+                                </div>
+                                <div class="flex items-center gap-3 p-4 bg-[#EEF0FF] rounded-lg">
+                                    <svg class="icon-small text-[#5B4BFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                    </svg>
+                                    <span class="font-medium text-gray-900">Réduction des Coûts</span>
+                                </div>
+                                <div class="flex items-center gap-3 p-4 bg-[#EEF0FF] rounded-lg">
+                                    <svg class="icon-small text-[#5B4BFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    <span class="font-medium text-gray-900">Économies de Temps</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 md:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-8 md:px-16">
+            <div class="text-center mb-16 md:mb-20">
+                <h2 class="section-title mb-4">Fonctionnalités Puissantes</h2>
+                <p class="section-subtitle max-w-2xl mx-auto">
+                    Découvrez comment nos solutions d'automatisation transforment votre flux de travail quotidien avec une technologie IA de pointe.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
+                <!-- Feature 1: Smart Workflows -->
+                <div class="feature-card">
+                    <div class="mb-6">
+                        <div class="w-14 h-14 bg-gradient-to-br from-[#5B4BFF] to-[#7C6EFF] rounded-xl flex items-center justify-center">
+                            <svg class="icon-medium text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Workflows Intelligents</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Créez des workflows automatisés sans code. Nos systèmes intelligents apprennent de vos processus et les optimisent continuellement pour une efficacité maximale.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center gap-2">
+                            <svg class="icon-small text-[#00E5A8]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                            </svg>
+                            Configuration simple et intuitive
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg class="icon-small text-[#00E5A8]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                            </svg>
+                            Intégration avec 500+ applications
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg class="icon-small text-[#00E5A8]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                            </svg>
+                            Exécution en temps réel
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Feature 2: Cost Reduction -->
+                <div class="feature-card">
+                    <div class="mb-6">
+                        <div class="w-14 h-14 bg-gradient-to-br from-[#00E5A8] to-[#00D99F] rounded-xl flex items-center justify-center">
+                            <svg class="icon-medium text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Réduction des Coûts</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Diminuez vos dépenses opérationnelles jusqu'à 60%. Automatisez les tâches répétitives et réduisez le besoin en ressources humaines pour les processus administratifs.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center gap-2">
+                            <svg class="icon-small text-[#00E5A8]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                            </svg>
+                            ROI en moins de 3 mois
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg class="icon-small text-[#00E5A8]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                            </svg>
+                            Pas d'investissement initial élevé
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg class="icon-small text-[#00E5A8]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                            </svg>
+                            Modèle de tarification flexible
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Feature 3: Time Savings -->
+                <div class="feature-card">
+                    <div class="mb-6">
+                        <div class="w-14 h-14 bg-gradient-to-br from-[#5B4BFF] to-[#00E5A8] rounded-xl flex items-center justify-center">
+                            <svg class="icon-medium text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Économies de Temps</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Gagnez 20 heures par semaine en moyenne. Vos équipes peuvent se concentrer sur des tâches à haute valeur ajoutée plutôt que sur des processus manuels répétitifs.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center gap-2">
+                            <svg class="icon-small text-[#00E5A8]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                            </svg>
+                            Traitement 24/7 sans interruption
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg class="icon-small text-[#00E5A8]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                            </svg>
+                            Zéro erreur humaine
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg class="icon-small text-[#00E5A8]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                            </svg>
+                            Augmentation de la productivité
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-20 md:py-32 bg-[#EEF0FF]">
+        <div class="max-w-7xl mx-auto px-8 md:px-16">
+            <div class="text-center mb-16 md:mb-20">
+                <h2 class="section-title mb-4">Avantages Transformateurs</h2>
+                <p class="section-subtitle max-w-2xl mx-auto">
+                    Découvrez comment l'automatisation IA change la façon dont les entreprises opèrent et se développent.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
+                <!-- Benefit 1: Automate Tasks -->
+                <div class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 card-hover">
+                    <div class="mb-6 flex items-center justify-center">
+                        <div class="w-16 h-16 bg-gradient-to-br from-[#5B4BFF] to-[#7C6EFF] rounded-2xl flex items-center justify-center">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-center text-gray-900 mb-4">Automatisation des Tâches</h3>
+                    <p class="text-gray-600 text-center leading-relaxed mb-6">
+                        Automatisez les tâches répétitives et chronophages. De la saisie de données à la gestion des emails, tout peut être optimisé avec nos workflows intelligents.
+                    </p>
+                    <div class="space-y-3 pt-6 border-t border-gray-200">
+                        <div class="flex items-start gap-3">
+                            <svg class="icon-small text-[#00E5A8] mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <div>
+                                <p class="font-medium text-gray-900">Traitement par lot</p>
+                                <p class="text-sm text-gray-600">Traitez des milliers de documents instantanément</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <svg class="icon-small text-[#00E5A8] mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <div>
+                                <p class="font-medium text-gray-900">Déclencheurs intelligents</p>
+                                <p class="text-sm text-gray-600">Les actions se déclenchent automatiquement selon vos règles</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Benefit 2: Reduce Costs -->
+                <div class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 card-hover">
+                    <div class="mb-6 flex items-center justify-center">
+                        <div class="w-16 h-16 bg-gradient-to-br from-[#00E5A8] to-[#00D99F] rounded-2xl flex items-center justify-center">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-center text-gray-900 mb-4">Réduction des Coûts</h3>
+                    <p class="text-gray-600 text-center leading-relaxed mb-6">
+                        Diminuez vos dépenses opérationnelles de façon significative. Réduisez les besoins en personnel, les erreurs coûteuses et les inefficacités.
+                    </p>
+                    <div class="space-y-3 pt-6 border-t border-gray-200">
+                        <div class="flex items-start gap-3">
+                            <svg class="icon-small text-[#00E5A8] mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <div>
+                                <p class="font-medium text-gray-900">Moins d'erreurs</p>
+                                <p class="text-sm text-gray-600">Éliminex les erreurs manuelles coûteuses</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <svg class="icon-small text-[#00E5A8] mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <div>
+                                <p class="font-medium text-gray-900">Optimisation des ressources</p>
+                                <p class="text-sm text-gray-600">Utilisez votre équipe pour des tâches stratégiques</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Benefit 3: Save Time -->
+                <div class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 card-hover">
+                    <div class="mb-6 flex items-center justify-center">
+                        <div class="w-16 h-16 bg-gradient-to-br from-[#5B4BFF] to-[#00E5A8] rounded-2xl flex items-center justify-center">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-center text-gray-900 mb-4">Économies de Temps</h3>
+                    <p class="text-gray-600 text-center leading-relaxed mb-6">
+                        Libérez du temps précieux pour votre équipe. Concentrez-vous sur la croissance et l'innovation plutôt que sur des tâches administratives.
+                    </p>
+                    <div class="space-y-3 pt-6 border-t border-gray-200">
+                        <div class="flex items-start gap-3">
+                            <svg class="icon-small text-[#00E5A8] mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <div>
+                                <p class="font-medium text-gray-900">Traitement 24/7</p>
+                                <p class="text-sm text-gray-600">Travail continu sans pause ni fatigue</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <svg class="icon-small text-[#00E5A8] mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <div>
+                                <p class="font-medium text-gray-900">Productivité accrue</p>
+                                <p class="text-sm text-gray-600">Augmentez votre capacité sans augmenter les coûts</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 md:py-32 bg-gradient-to-r from-[#5B4BFF] to-[#7C6EFF] relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 left-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-8 md:px-16 relative z-10">
+            <div class="text-center max-w-3xl mx-auto">
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+                    Prêt à Transformer Votre Entreprise ?
+                </h2>
+                <p class="text-xl text-white text-opacity-90 mb-8 leading-relaxed">
+                    Rejoignez plus de 500 entreprises qui ont déjà augmenté leur productivité et réduit leurs coûts grâce à nos solutions d'automatisation IA.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="https://test.com" class="bg-white text-[#5B4BFF] font-bold py-4 px-8 rounded-full hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 hover:shadow-lg text-center">
+                        Démarrer Gratuitement
+                    </a>
+                    <button class="border-2 border-white text-white font-bold py-4 px-8 rounded-full hover:bg-white hover:bg-opacity-10 transition-all duration-300 transform hover:scale-105">
+                        Planifier une Démo
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 md:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-8 md:px-16">
+            <div class="text-center mb-16 md:mb-20">
+                <h2 class="section-title mb-4">Ce Que Disent Nos Clients</h2>
+                <p class="section-subtitle max-w-2xl mx-auto">
+                    Découvrez comment nos solutions ont transformé les opérations et la croissance de nos clients.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 md:gap-12">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="flex items-center gap-1 mb-4">
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6 flex-grow">
+                        "L'automatisation a complètement transformé notre processus de facturation. Nous avons réduit le temps de traitement de 80% et éliminé pratiquement toutes les erreurs. Notre équipe peut maintenant se concentrer sur les tâches stratégiques."
+                    </p>
+                    <div class="pt-6 border-t border-gray-200">
+                        <p class="font-bold text-gray-900">Sophie Dupont</p>
+                        <p class="text-sm text-gray-600">Directrice Financière, TechStart Paris</p>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="flex items-center gap-1 mb-4">
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6 flex-grow">
+                        "Incroyable ! Nous avons pu automatiser nos tâches de gestion des leads et nos conversions ont augmenté de 45%. Le système fonctionne exactement comme prévu, sans aucun problème."
+                    </p>
+                    <div class="pt-6 border-t border-gray-200">
+                        <p class="font-bold text-gray-900">Marc Leblanc</p>
+                        <p class="text-sm text-gray-600">Responsable Commercial, Innovation Solutions</p>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="flex items-center gap-1 mb-4">
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6 flex-grow">
+                        "Le support client est exceptionnel. Nous avons mis en place plusieurs workflows en moins d'une semaine. L'investissement s'est rapidement rentabilisé grâce aux économies réalisées."
+                    </p>
+                    <div class="pt-6 border-t border-gray-200">
+                        <p class="font-bold text-gray-900">Isabelle Martin</p>
+                        <p class="text-sm text-gray-600">PDG, Consulting Group Île-de-France</p>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card">
+                    <div class="flex items-center gap-1 mb-4">
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6 flex-grow">
+                        "Nous avons sauvé plus de 30 heures par mois sur la gestion des commandes. L'interface est intuitive et l'intégration avec nos systèmes existants s'est déroulée sans problème."
+                    </p>
+                    <div class="pt-6 border-t border-gray-200">
+                        <p class="font-bold text-gray-900">Jean-Pierre Rousseau</p>
+                        <p class="text-sm text-gray-600">Directeur Opérationnel, Distribution Plus</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="py-20 md:py-32 bg-[#EEF0FF]">
+        <div class="max-w-7xl mx-auto px-8 md:px-16">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="section-title mb-4">À Propos de Nous</h2>
+                <p class="section-subtitle max-w-2xl mx-auto">
+                    Découvrez l'histoire et la mission derrière AutomationIA
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 items-center">
+                <div>
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-gradient-to-r from-[#5B4BFF] to-[#00E5A8] rounded-2xl opacity-10 blur-2xl"></div>
+                        <div class="relative bg-white rounded-2xl p-8 shadow-lg">
+                            <div class="space-y-6">
+                                <div class="flex items-start gap-4">
+                                    <div class="w-12 h-12 bg-gradient-to-br from-[#5B4BFF] to-[#7C6EFF] rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-900">Fondée en 2022</h4>
+                                        <p class="text-gray-600 text-sm">Par une équipe d'experts en IA et automatisation</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <div class="w-12 h-12 bg-gradient-to-br from-[#00E5A8] to-[#00D99F] rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-900">500+ Clients</h4>
+                                        <p class="text-gray-600 text-sm">En France et en Europe qui nous font confiance</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <div class="w-12 h-12 bg-gradient-to-br from-[#5B4BFF] to-[#00E5A8] rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-900">Certifiés ISO</h4>
+                                        <p class="text-gray-600 text-sm">Avec les plus hauts standards de qualité</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Notre Histoire</h3>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            AutomationIA a été fondée en 2022 par une équipe passionnée d'experts en intelligence artificielle et en automatisation des processus. Nous avons observé que les petites et moyennes entreprises avaient du mal à accéder à des solutions d'automatisation sophistiquées en raison de coûts élevés et de complexité technique. C'est pourquoi nous avons créé AutomationIA - une plateforme accessible, puissante et facile à utiliser qui démocratise l'automatisation IA pour tous.
+                        </p>
+                        <p class="text-gray-700 leading-relaxed">
+                            Depuis notre lancement, nous avons aidé plus de 500 entreprises à transformer leurs opérations, économiser des millions d'euros et libérer du temps précieux pour se concentrer sur la croissance et l'innovation.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Notre Mission</h3>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Notre mission est simple : démocratiser l'accès à l'automatisation IA de classe mondiale pour les petites et moyennes entreprises. Nous croyons que chaque entreprise, quelle que soit sa taille, devrait avoir accès à la technologie la plus avancée pour optimiser ses opérations, réduire ses coûts et améliorer sa productivité.
+                        </p>
+                        <p class="text-gray-700 leading-relaxed">
+                            Nous nous engageons à fournir un support client exceptionnel, une innovation continue et des solutions qui évoluent avec vos besoins. Nos valeurs fondamentales - excellence, accessibilité, intégrité et innovation - guident chaque décision que nous prenons.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 md:py-32 bg-white">
+        <div class="max-w-4xl mx-auto px-8 md:px-16">
+            <div class="text-center mb-16 md:mb-20">
+                <h2 class="section-title mb-4">Questions Fréquemment Posées</h2>
+                <p class="section-subtitle">
+                    Trouvez les réponses aux questions les plus courantes sur notre plateforme d'automatisation IA.
+                </p>
+            </div>
+            
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Quel est le temps de mise en place d'une automatisation ?</span>
+                        <svg class="faq-icon icon-medium" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden">
+                        <p>
+                            La plupart des automations peuvent être configurées en quelques heures à quelques jours selon leur complexité. Pour les workflows simples, comme l'automatisation d'emails ou la synchronisation de données, vous pouvez commencer en moins d'une heure. Pour les processus plus complexes, notre équipe d'experts peut vous aider à mettre en place une solution sur mesure en 1 à 2 semaines. Nous fournissons également une formation complète à votre équipe pour garantir une adoption fluide.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Quels systèmes peuvent être intégrés avec AutomationIA ?</span>
+                        <svg class="faq-icon icon-medium" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden">
+                        <p>
+                            AutomationIA s'intègre avec plus de 500 applications populaires, notamment CRM (Salesforce, HubSpot), systèmes comptables (QuickBooks, Sage), outils de communication (Slack, Teams), plateformes d'email marketing (Mailchimp, Brevo), et bien d'autres. Si vous utilisez une application spécifique, nous avons probablement une intégration disponible. Si ce n'est pas le cas, notre API flexible permet des intégrations personnalisées. Contactez notre équipe de support pour vérifier la compatibilité avec vos outils actuels.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Quel est le retour sur investissement typique ?</span>
+                        <svg class="faq-icon icon-medium" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden">
+                        <p>
+                            La plupart de nos clients constatent un ROI positif dans les 3 premiers mois. En moyenne, les entreprises économisent 20-30 heures par semaine et réduisent leurs coûts opérationnels de 40-60%. Par exemple, si vous avez un employé dédié à une tâche répétitive gagnant 2 500 €/mois, l'automatisation de cette tâche pourrait vous économiser 30 000 € par an. Avec nos plans commençant à partir de quelques centaines d'euros par mois, le ROI est généralement réalisé très rapidement. Nous offrons également une garantie de satisfaction de 30 jours.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Comment la sécurité et la confidentialité des données sont-elles assurées ?</span>
+                        <svg class="faq-icon icon-medium" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden">
+                        <p>
+                            La sécurité est notre priorité absolue. AutomationIA utilise le chiffrement de bout en bout, les certificats SSL, et respecte les normes ISO 27001 et RGPD. Tous les serveurs sont hébergés dans des centres de données sécurisés en Europe avec des sauvegardes redondantes. Nous effectuons des audits de sécurité réguliers et des tests de pénétration. Vos données ne sont jamais vendues ou partagées avec des tiers. Vous conservez le contrôle total de vos données et pouvez les exporter ou les supprimer à tout moment.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 5 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Quel support client est disponible ?</span>
+                        <svg class="faq-icon icon-medium" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden">
+                        <p>
+                            Nous offrons un support client exceptionnel 24/7 par email, chat et téléphone. Chaque client a accès à notre base de connaissances complète, à des tutoriels vidéo et à une documentation détaillée. Les clients des plans Premium et Enterprise bénéficient également d'un gestionnaire de compte dédié et de sessions de formation personnalisées. Nous répondons généralement aux demandes de support dans les 2 heures pendant les heures de bureau et dans les 8 heures en dehors. Votre satisfaction est notre succès.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 md:py-32 bg-gradient-to-br from-[#EEF0FF] to-white">
+        <div class="max-w-4xl mx-auto px-8 md:px-16">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="section-title mb-4">Prêt à Démarrer ?</h2>
+                <p class="section-subtitle">
+                    Contactez-nous pour une démonstration gratuite ou pour répondre à vos questions.
+                </p>
+            </div>
+            
+            <div class="bg-white rounded-2xl shadow-lg p-8 md:p-12">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+                    <div class="space-y-6">
+                        <h3 class="text-2xl font-bold text-gray-900">Contactez-Nous</h3>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-[#EEF0FF] rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="icon-medium text-[#5B4BFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="font-medium text-gray-900">Email</p>
+                                <p class="text-gray-600"><a href="mailto:admin@test.com" class="hover:text-[#5B4BFF] transition-colors">admin@test.com</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-[#EEF0FF] rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="icon-medium text-[#5B4BFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="font-medium text-gray-900">Support 24/7</p>
+                                <p class="text-gray-600">Disponible par chat, email et téléphone</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-[#EEF0FF] rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="icon-medium text-[#5B4BFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="font-medium text-gray-900">Essai Gratuit</p>
+                                <p class="text-gray-600">30 jours sans engagement, pas de carte bancaire</p>
+                            </div>
+                        </div>
+                        
+                        <a href="https://test.com" class="btn-primary inline-block mt-4">Commencer Maintenant</a>
+                    </div>
+                    
+                    <div>
+                        <form class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-900 mb-2">Nom Complet</label>
+                                <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#5B4BFF] focus:ring-2 focus:ring-[#5B4BFF] focus:ring-opacity-20 transition-all" placeholder="Votre nom" required>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium text-gray-900 mb-2">Email</label>
+                                <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#5B4BFF] focus:ring-2 focus:ring-[#5B4BFF] focus:ring-opacity-20 transition-all" placeholder="votre@email.com" required>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium text-gray-900 mb-2">Entreprise</label>
+                                <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#5B4BFF] focus:ring-2 focus:ring-[#5B4BFF] focus:ring-opacity-20 transition-all" placeholder="Nom de votre entreprise" required>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium text-gray-900 mb-2">Message</label>
+                                <textarea class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#5B4BFF] focus:ring-2 focus:ring-[#5B4BFF] focus:ring-opacity-20 transition-all" rows="4" placeholder="Comment pouvons-nous vous aider ?" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn-primary w-full text-center">Envoyer</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    
+    <!-- Contact Form Section - Centered Card Layout -->
+    <section id="contact" class="py-20 bg-gradient-to-b from-white to-gray-50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Get in Touch</h2>
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+            Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+          <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
+            <input type="hidden" name="access_key" value="0b917c63-84c9-466a-b417-2cad89801d7f">
+            <input type="hidden" name="redirect" value="false">
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+            <div>
+              <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">
+                Full Name <span class="text-red-500">*</span>
+              </label>
+              <input 
+                type="text" 
+                name="name" 
+                id="name" 
+                required 
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 outline-none"
+                placeholder="John Doe"
+              >
+            </div>
+
+            <div>
+              <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">
+                Email Address <span class="text-red-500">*</span>
+              </label>
+              <input 
+                type="email" 
+                name="email" 
+                id="email" 
+                required 
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 outline-none"
+                placeholder="john@example.com"
+              >
+            </div>
+
+            <div>
+              <label for="phone" class="block text-sm font-semibold text-gray-700 mb-2">
+                Phone Number
+              </label>
+              <input 
+                type="tel" 
+                name="phone" 
+                id="phone" 
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 outline-none"
+                placeholder="+1 (555) 000-0000"
+              >
+            </div>
+
+            <div>
+              <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">
+                Message <span class="text-red-500">*</span>
+              </label>
+              <textarea 
+                name="message" 
+                id="message" 
+                required 
+                rows="5" 
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 outline-none resize-none"
+                placeholder="Tell us about your project or inquiry..."
+              ></textarea>
+            </div>
+
+            <div class="pt-4">
+              <button 
+                type="submit" 
+                class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-200 transform hover:scale-[1.02] active:scale-[0.98] shadow-lg hover:shadow-xl"
+              >
+                Send Message
+              </button>
+            </div>
+
+            <div id="form-result" class="hidden mt-4 p-4 rounded-lg text-center font-medium"></div>
+          </form>
+        </div>
+
+        <div class="mt-12 text-center">
+          <p class="text-gray-600">
+            Or email us directly at <a href="mailto:hello@example.com" class="text-blue-600 hover:text-blue-700 font-semibold">hello@example.com</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      (function() {
+        const form = document.querySelector('form[action*="web3forms"]');
+        const resultDiv = document.getElementById('form-result');
+        
+        if (!form) return;
+        
+        form.addEventListener('submit', async function(e) {
+          e.preventDefault();
+          
+          const formData = new FormData(form);
+          const submitButton = form.querySelector('button[type="submit"]');
+          const originalButtonText = submitButton.textContent;
+          
+          submitButton.disabled = true;
+          submitButton.textContent = 'Sending...';
+          resultDiv.classList.add('hidden');
+          
+          try {
+            const response = await fetch('https://api.web3forms.com/submit', {
+              method: 'POST',
+              body: formData
+            });
+            
+            const data = await response.json();
+            
+            if (response.ok && data.success) {
+              resultDiv.className = 'block mt-4 p-4 rounded-lg text-center font-medium bg-green-50 text-green-800 border border-green-200';
+              resultDiv.textContent = 'Thank you! Your message has been sent successfully. We\'ll get back to you soon.';
+              form.reset();
+            } else {
+              resultDiv.className = 'block mt-4 p-4 rounded-lg text-center font-medium bg-red-50 text-red-800 border border-red-200';
+              resultDiv.textContent = data.message || 'Something went wrong. Please try again.';
+            }
+          } catch (error) {
+            resultDiv.className = 'block mt-4 p-4 rounded-lg text-center font-medium bg-red-50 text-red-800 border border-red-200';
+            resultDiv.textContent = 'Network error. Please check your connection and try again.';
+          } finally {
+            submitButton.disabled = false;
+            submitButton.textContent = originalButtonText;
+          }
+        });
+      })();
+    </script>
+  <footer class="bg-gray-900 text-gray-300 py-16 md:py-20">
+        <div class="max-w-7xl mx-auto px-8 md:px-16">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mb-12">
+                <!-- Brand Column -->
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-[#5B4BFF] to-[#7C6EFF] rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">IA</span>
+                        </div>
+                        <span class="text-xl font-bold text-white">AutomationIA</span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Transformez votre entreprise avec l'automatisation IA de nouvelle génération.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#5B4BFF] transition-colors duration-300">
+                            <i class="fab fa-facebook-f text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#5B4BFF] transition-colors duration-300">
+                            <i class="fab fa-twitter text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#5B4BFF] transition-colors duration-300">
+                            <i class="fab fa-linkedin-in text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#5B4BFF] transition-colors duration-300">
+                            <i class="fab fa-instagram text-white"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Product Column -->
+                <div>
+                    <h4 class="text-white font-bold mb-6">Produit</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#features" class="text-gray-400 hover:text-[#5B4BFF] transition-colors duration-300">Fonctionnalités</a></li>
+                        <li><a href="#benefits" class="text-gray-400 hover:text-[#5B4BFF] transition-colors duration-300">Avantages</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-[#5B4BFF] transition-colors duration-300">Témoignages</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-[#5B4BFF] transition-colors duration-300">FAQ</a></li>
+                        <li><a href="https://test.com" class="text-gray-400 hover:text-[#5B4BFF] transition-colors duration-300">Tarification</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Company Column -->
+                <div>
+                    <h4 class="text-white font-bold mb-6">Entreprise</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-[#5B4BFF] transition-colors duration-300">À Propos</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-[#5B4BFF] transition-colors duration-300">Carrières</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-[#5B4BFF] transition-colors duration-300">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-[#5B4BFF] transition-colors duration-300">Ressources</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-[#5B4BFF] transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Legal Column -->
+                <div>
+                    <h4 class="text-white font-bold mb-6">Légal</h4>
+                    <ul class="space-y-3">
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-[#5B4BFF] transition-colors duration-300">Politique de Confidentialité</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-[#5B4BFF] transition-colors duration-300">Conditions d'Utilisation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-[#5B4BFF] transition-colors duration-300">Politique de Cookies</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-[#5B4BFF] transition-colors duration-300">Mentions Légales</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Bottom Footer -->
+            <div class="border-t border-gray-800 pt-8 mt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm">
+                        &copy; 2025 AutomationIA. Tous les droits réservés.
+                    </p>
+                    <p class="text-gray-400 text-sm mt-4 md:mt-0">
+                        Conçu et développé avec <span class="text-[#00E5A8]">❤</span> à Paris
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // FAQ Accordion Toggle
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                if (question) {
+                    question.addEventListener('click', () => {
+                        const answer = item.querySelector('.faq-answer');
+                        const isOpen = !answer.classList.contains('hidden');
+                        
+                        // Close all other FAQ items
+                        faqItems.forEach(otherItem => {
+                            if (otherItem !== item) {
+                                otherItem.querySelector('.faq-answer')?.classList.add('hidden');
+                                otherItem.querySelector('.faq-icon')?.classList.remove('rotate-180');
+                            }
+                        });
+                        
+                        // Toggle current item
+                        answer?.classList.toggle('hidden');
+                        item.querySelector('.faq-icon')?.classList.toggle('rotate-180');
+                    });
+                }
+            });
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
